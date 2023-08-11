@@ -1,0 +1,152 @@
+
+
+.preview_main{
+    width:60vw;
+
+    margin-top:7vh;
+    margin-left:13vw;
+
+    padding-top:3vh;
+    padding-left:2vw;
+    padding-right:2vw;
+    padding-bottom:3vh;
+
+    margin-bottom:5vh;
+
+    background:var(--content-bg-color);
+    border-radius:2px;
+    box-shadow: 0 2px 4px #dcdee0;
+}
+
+.preview_main img{
+    max-width:55vw;
+}
+
+.preview_main a{
+    word-break: break-all;
+}
+
+#title{
+    font-size:2.8em;
+    border:none;
+}
+
+#preview_html_content{
+    padding-top:3vh;
+}
+
+#a_form_div{
+    width: 68vw;
+    margin-top: 7vh;
+    margin-left: 13vw;
+    margin-bottom:10vh;
+    padding-top: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 3vh;
+    background: var(--content-bg-color);
+    border-radius: 2px;
+}
+
+#edit_box{
+    height:35vh !important;
+}
+
+#editor_main{
+    height:30vh !important;
+}
+
+#side_bar{
+    position: sticky;
+    width:15vw;
+    margin-top:7vh;
+    margin-left:3vw;
+    padding-top:5vh;
+    padding-left:3vw;
+    top:30px;
+    height:50vh;
+    background:#fafaff;
+    box-shadow: 0 2px 4px #dcdee0;
+    overflow:scroll;
+    border-radius:0.2em;
+}
+
+#side_bar::-webkit-scrollbar {
+    display: none;
+}
+
+#side_bar a{
+    display:block;
+    margin-top:1em;
+    color:var(--text-color);
+    text-decoration:none;
+}
+
+.sns_share{
+    padding-top:2.5em;
+    padding-bottom:0.5em;
+    text-align:center;
+}
+
+.sns_share a{
+    text-decoration:none;
+}
+
+#twitter{
+    transition: 0.3s all;
+}
+
+#twitter:hover{
+    fill:#1d9bf0;
+}
+
+#facebook{
+    transition: 0.3s all;
+}
+#facebook:hover{
+    fill:#1877f2;
+}
+
+#linkedin{
+    transition:0.3s all;
+}
+#linkedin:hover{
+    fill:#0a66c2;
+}
+
+.sns_btn{
+    border-radius:5em;
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    transition: 0.3s all;
+}
+.sns_btn:hover{
+    background:#e8e8e8;
+}
+
+h1{
+    border-bottom: 1px solid #dadada;
+    padding-bottom:0.3em;
+}
+
+.answer_title{
+    display:inline-block;
+    font-size:2em;
+    border-bottom:1px solid #888888;
+}
+
+@media screen and ( max-width:600px )
+{
+    .preview_main{
+        margin-left:0;
+        width:96vw;
+    }
+    #side_bar{
+        display:none;
+    }
+    p{
+        font-size:1.1em;
+    }
+    img{
+        width:80vw;
+    }
+}

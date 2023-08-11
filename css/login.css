@@ -1,0 +1,41 @@
+
+.login_text{
+    font-size:2em;
+    margin-bottom:0.6em;
+}
+
+.input_box{
+    margin-top: 2vh;
+    background:#fafaff;
+    color:#29363D;
+    font-size:1.1em;
+    width:25vw;
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+    padding-left:0.5em;
+    border: 1px solid #d6d6d6;
+    border-radius:0.2em;
+}
+
+.login_box_main{
+    margin-top:10vh;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    text-align:center;
+    background:#fafaff;
+    margin-left:auto;
+    margin-right:auto;
+    width:35vw;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and ( max-width:600px )
+{
+    .input_box{
+        width:60vw;
+    }
+
+    .login_box_main{
+        width:80vw;
+    }
+}

@@ -1,0 +1,259 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: linear-gradient(#ddddff,#eeeeff);
+}
+
+#chat_area{
+    margin-top:7vh;
+    margin-left:5vw;
+    width:90vw;
+}
+
+#chat_area .chat_title{
+    font-size:2.2em;
+}
+
+
+#chat_main{
+    height:50vh;
+    margin-top:3vh;
+    overflow-y:scroll;
+    scrollbar-width: none;
+    animation: feedin_anime 0.5s forwards;
+}
+#chat_main::-webkit-scrollbar{
+    display: none;
+}
+
+.from_link{
+    font-size:0.8em;
+    font-weight:400;
+    padding-left:1em;
+    color:#444444;
+    text-decoration:none;
+}
+.from_link::before{
+    content:"visit"
+}
+
+.chat_text{
+    max-width:90vw;
+    width:fit-content;
+    margin-top:3vh;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    word-break: break-all;
+    border-radius:0.3em;
+    box-shadow: 0 4px 8px -2px #000a3c1a;
+}
+
+.bot{
+    text-align:left;
+    background:#fafaff;
+    color:#2d2d2d;
+}
+
+.me{
+    text-align:left;
+    background:#4A8FE7;
+    color:#fafaff;
+}
+
+  
+#chat_textbox_block{
+    text-align:left;
+}
+
+#chat_textbox{
+    width:90vw;
+    font-size:1.2em;
+    padding-top:0.4em;
+    padding-bottom:0.4em;
+    padding-left:0.5em;
+    border-radius:0.2em;
+    border:none;
+}
+
+.menu_box{
+    display:block;
+    background:#555555;
+    color:#fafaff;
+    margin-top:3vh;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-left:1em;
+    border-radius:0.2em;
+    transition: 0.3s all;
+    cursor:pointer;
+    box-shadow: 0 4px 8px -2px #000a3c1a;
+    text-decoration:none;
+    animation: feedin_anime 0.5s forwards;
+}
+
+.menu_box::after{
+    position:absolute;
+    content:url("../img/chevron-right.svg");
+    left:80vw;
+}
+
+.menu_box:hover{
+    background:#444444;
+}
+
+.menu_box:active{
+    background:#333333;
+}
+
+#search_box{
+    background:#fafaff !important;
+    width:90vw !important;
+    font-size:1.2em !important;
+    padding-top:0.4em !important;
+    padding-bottom:0.4em !important;
+    padding-left:0.5em !important;
+    border-radius:0.2em !important;
+    margin-top:6vh !important;
+    border:none !important;
+    animation: feedin_anime 0.5s forwards !important;
+}
+
+.search_area_embed{
+    padding-left:5vw;
+    padding-top:7vh;
+}
+
+#help_area{
+    padding-top:5vh;
+}
+
+.help_content{
+    width:60vw;
+    /* border-top:2px solid #29363D; */
+    margin-bottom:6vh;
+    
+    background:rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.15);
+    border-radius:5px;
+    padding-bottom:6vh;
+    animation: feedin_anime 0.5s forwards;
+}
+
+.help_content .title{
+    display:inline-block;
+    /*padding-top:0.5em;*/
+    padding-top:1.5em;
+    padding-left:1.5em;
+    font-size:1.4em;
+    margin-bottom:5vh;
+}
+
+.help_content .open{
+    float:right;
+    /*margin-top:0.5em;*/
+    margin-top:1.5em;
+    padding-right:5em;
+    width:1.5em;
+}
+
+.help_content .close_hide{
+    display:none;
+}
+
+.help_content .description{
+    padding-left:1.5em;
+    font-size:1.2em;
+    margin-bottom:5vh;
+}
+
+.help_content .more{
+    text-decoration: none;
+}
+
+.help_content .more::before{
+    content: "more...";
+    padding-left:1.5em;
+    font-size:1.2em;
+    color:#4A8FE7;
+}
+.help_content .more:hover::before{
+    color:#0055ff;
+}
+
+.help_content .setting{
+    float:right;
+    padding-right:1.5em;
+    /*padding-top:0.6em;*/
+    padding-top:1.6em;
+    color:var(--text-color);
+    text-decoration: none;
+}
+
+.back_top{
+    display:block;
+    float:right;
+    margin-right:5vw;
+    width:1.2em;
+    height:1.2em;
+    background:#c7c6cf;
+    border-radius:5px;
+    box-shadow: 0 4px 8px -2px #000a3c1a;
+    text-decoration:none;
+    transition:0.3s all;
+}
+
+.back_top:hover{
+    background:#b3b2b9;
+}
+.back_top:active{
+    background:#7b7b80;
+}
+
+.menu_click_box{
+    display:block;
+    text-decoration:none;
+    width:80vw;
+
+    /* border-top:2px solid #29363D; */
+    margin-bottom:6vh;
+    font-size:1.2em;
+    background:#fafaff;
+    color:#000000;
+    box-shadow: 0 4px 8px -2px #000a3c1a;
+    border-radius:5px;
+    padding-top:3vh;
+    padding-bottom:3vh;
+    padding-left:10vw;
+    transition:0.3s all;
+    animation: feedin_anime 0.5s forwards;
+}
+
+.menu_click_box:hover{
+    background:#ececf3;
+}
+
+.menu_click_box:active{
+    background:#b3b3b8;
+}
+
+.menu_click_box::after{
+    position:absolute;
+    content:url("../img/chevron-right-black.svg");
+    left:80vw;
+}
+
+@keyframes feedin_anime{
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

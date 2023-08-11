@@ -1,0 +1,274 @@
+body{
+    margin:0;
+}
+
+#dash_main_area{
+    display:flex;
+}
+
+#dash_main_area{
+    padding-top:0;
+}
+
+header{
+    background:#ffffff;
+    padding-top:3vh;
+    padding-bottom:3vh;
+}
+header .menu{
+    font-size:1.3em;
+}
+
+#user_info{
+    width:20vw;
+    padding-left:3vw;
+    background:#ffffff;
+    margin-right:3vw;
+    margin-block-start: 0em;
+    animation: user_info_anime 0.3s forwards;
+}
+
+@keyframes user_info_anime {
+    0% {
+      width:16vw;
+    }
+    100% {
+        width:20vw;
+    }
+  }
+
+  @keyframes user_info_anime_phone {
+    0% {
+      width:60vw;
+    }
+    100% {
+        width:80vw;
+    }
+  }
+
+
+.user_info_content{
+    font-size:1.2em;
+    height:85vh;
+    word-break: break-all;
+}
+
+.user_info_content .info_choose{
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+    margin-top:0.2em;
+    margin-bottom:0.2em;
+    transition: all 0.2s; 
+    padding-left:1vw;
+    width:16vw;
+    font-weight:500;
+
+    border-radius:0.1em;
+    cursor:pointer;
+}
+
+.menu_select_p{
+    display:block;
+    padding-top:8vh;
+    padding-bottom:2vh;
+    font-size:0.9em;
+    color:#999999;
+}
+
+.user_info_content .info_choose:hover{
+    background:#e5eaff;
+    color:#8a96af;
+}
+
+.user_info_content .chosen_box{
+    animation: color_anime 0.3s forwards;
+}
+
+@keyframes color_anime {
+    0% {
+      background:#cad1ec;
+      color:#5C79D1;
+    }
+    50%{
+        background:#c5cdeb;
+    }
+    100% {
+        background:#DAE2FF;
+        color:#5C79D1;
+    }
+  }
+
+#choose_box_list{
+    display:none;
+}
+
+.choose_bar{
+    padding-top:10vh;
+    padding-bottom:5vh;
+}
+
+.choose_bar .choose_box{
+    display:inline-block;
+    font-size:1.3em;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    padding-right:1em;
+    cursor:pointer;
+}
+
+.choose_bar .chosen_box{
+    animation: choose_color 0.1s forwards;
+}
+@keyframes choose_color {
+    0% {
+      background:#d4d4d4;
+    }
+    50%{
+        background:#bebebe;
+    }
+    100% {
+        background:#e5e5ec;
+    }
+  }
+
+
+#tab_title{
+    display:inline-block;
+    font-size:1.3em;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+}
+
+#new_post{
+    position:absolute;
+    display:inline-block;
+    font-size:1em;
+    bottom:2em;
+
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    padding-right:1.3em;
+    padding-left:1.3em;
+    background:#64B6AC;
+    color:#ffffff;
+    text-decoration: none;
+    border-radius:0.2em;
+}
+
+#dash_main_area ul{
+    margin:0;
+}
+
+.post_content{
+    width:60vw;
+    height:60vh;
+    overflow-y: scroll;
+}
+.post_content::-webkit-scrollbar{
+    display: none;
+  }
+
+#post_main{
+    margin-top:1em;
+}
+
+.help_content{
+    padding-bottom:3em;
+    margin-bottom:6vh;
+    /*border-bottom: 2px solid #29363D;*/
+    background:rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.15);
+    border-radius:5px;
+    padding-bottom:6vh;
+}
+
+
+.dash_setting{
+    display:none;
+    margin-top:5vh;
+    padding-top:5vh;
+    padding-left:5vw;
+    padding-bottom:5vh;
+    background:rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.15);
+}
+
+.dash_setting h2{
+    font-weight:400;
+}
+.dash_setting h3{
+    font-weight:400;
+}
+.dash_setting input{
+    font-size:1.2em;
+    width:40vw;
+    margin-bottom:7vh;
+    border-radius:0.1em;
+    border: 1px solid var(--text-color);
+    color:var(--text-color);
+}
+.dash_setting a{
+    color:#888888;
+    text-decoration:none;
+}
+
+.github_title{
+    font-size:1em !important;
+}
+
+.allowed_user{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    font-size:1.2em;
+}
+
+.allowed_user .del{
+    float:right;
+    margin-right:30vw;
+    color:#ff0000;
+    cursor:pointer;
+    border-radius:8em;
+    padding-left:1em;
+    padding-right:1em;
+}
+
+@media screen and ( max-width:600px )
+{
+    ul{
+        padding-inline-start: 5vw;
+    }
+    #user_info{
+       display:none;
+       position:absolute;
+       width:80vw;
+       box-shadow: 0px 15px 15px 2px rgba(0, 0, 0, 0.15);
+       animation: user_info_anime_phone 0.3s forwards;
+       z-index:9999;
+    }
+    .user_info_content .info_choose {
+        width:76vw;
+    }
+    .post_content{
+        width:90vw;
+        overflow: hidden;
+        height:auto;
+    }
+    .setting{
+        display:none;
+    }
+    .help_content .open{
+        margin-right:1em;
+    }
+
+    .dash_setting input{
+        width:70vw;
+    }
+    #tab_title{
+        display:none;
+    }
+    #choose_box_list{
+        display:block;
+    }
+}

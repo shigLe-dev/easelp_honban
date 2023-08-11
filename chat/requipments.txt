@@ -1,0 +1,9 @@
+sumy
+tinysegmenter
+Janome
+flask
+sentence_transformers
+langdetect
+openai
+googletrans==3.1.0a0
+bardapi
