@@ -1,0 +1,98 @@
+
+
+プログラムの実行方法(現段階)
+
+python
+
+./chat/chatserver.py
+./chat/summarize.py
+./discord/main.py
+
+を実行(半永久)
+
+phpを実行
+
+本番サーバーで
+変えなければいけないもの
+
+./sql_info.php 
+
+'''
+./header.php $root_url
+./make_discussion.php $root_url
+./answer.php $root_url
+./save.php $root_url
+'''
+
+
+
+/help.php?u=ユーザー名
+
+searchフォルダのcsvファイルの形式
+
+file name:ユーザー名.csv
+
+content
+------------------
+
+title($split)file id($split)the beginning part
+title2($split)file id($split)the beginning part
+
+----------------
+
+file idは
+/data/file id.md
+が記事のファイルパスになる
+
+the beginning partは
+記事の冒頭部分だけ表示するため
+
+
+dash.php　ダッシュボード[
+edit.php　エディター
+
+
+######################################
+
+
+security
+
+
+postを作成した人以外の人にそれを編集されないようにする
+
+ファイルは(editor.phpから)
+./data/
+フォルダに入っていてファイル名は完全にランダム。
+拡張子はmd
+編集するとき、editor.php?fid=file_id
+にアクセス
+SESSIONからidを読んで、(user_id).csv
+にアクセスし、file idを読んでいく
+
+
+
+##############################################
+
+discussionの形式
+<div class="post_box">
+    <div class="user_icon" style="background:#ff9090;"></div>
+    <div class="post_main">
+        <div class="u">
+            user name
+        </div>
+        <div class="text">comment</div>
+    </div>
+</div>
+
+
+例:
+<div class="post_box">
+    <div class="user_icon" style="background:#ff9090;"></div>
+    <div class="post_main">
+        <div class="u">
+            user1
+        </div>
+        <div class="text">test comment</div>
+    </div>
+</div>
+

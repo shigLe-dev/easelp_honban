@@ -1,0 +1,13 @@
+mysql -u root -p
+
+create database easelp;
+
+use easelp;
+
+create table users (
+    id VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+insert into users values ('easelp','$2y$10$98ydrnBn1UnBsuv3pOARC.WMXR2MS7mzYgyBeweYyzoTGFeQNCj6K');
+insert into users values ('test1','$2y$10$2iCmQqtkXOsAUsSiInxlaO3ErZNq6F8pE6mkQQMKzLo0FPIf6JDyi');

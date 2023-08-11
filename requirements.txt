@@ -1,0 +1,14 @@
+
+sentence-transformers
+
+pandas
+
+torch
+
+sumy
+
+nltk
+
+flask
+
+requests
